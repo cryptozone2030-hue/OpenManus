@@ -31,14 +31,6 @@ temperature = 0.0                          # Controls randomness
 # max_tokens = 4096
 # temperature = 0.0
 
-# [llm] #Jiekou.AI:
-# api_type = 'jiekou'
-# model = "claude-sonnet-4-5-20250929"                               # The LLM model to use
-# base_url = "https://api.jiekou.ai/openai"                          # API endpoint URL
-# api_key = "your Jiekou.AI api key"                                 # Your API key
-# max_tokens = 64000                                                 # Maximum number of tokens in the response
-# temperature = 0.0                                                  # Controls randomness
-
 # Optional configuration for specific LLM models
 [llm.vision]
 model = "claude-3-7-sonnet-20250219"       # The vision model to use
@@ -102,6 +94,15 @@ temperature = 0.0                          # Controls randomness for vision mode
 #cpu_limit = 2.0
 #timeout = 300
 #network_enabled = true
+
+# Daytona configuration
+[daytona]
+daytona_api_key = ""
+#daytona_server_url = "https://app.daytona.io/api"
+#daytona_target = "us"                                   #Daytona is currently available in the following regions:United States (us)、Europe (eu)
+#sandbox_image_name = "whitezxj/sandbox:0.1.0"           #If you don't use this default image,sandbox tools may be useless
+#sandbox_entrypoint = "/usr/bin/supervisord -n -c /etc/supervisor/conf.d/supervisord.conf"   #If you change this entrypoint,server in sandbox may be useless
+#VNC_password =                                          #The password you set to log in sandbox by VNC,it will be 123456 if you don't set
 
 # MCP (Model Context Protocol) configuration
 [mcp]
